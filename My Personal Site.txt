@@ -1,3 +1,2 @@
 HELLO,
 I AM MINDULA DILTHUSHAN
-Programmer,Networking,Develper
