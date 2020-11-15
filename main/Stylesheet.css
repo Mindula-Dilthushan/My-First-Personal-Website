@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: VALORANT;
+}
+a{
+    text-decoration: none;
+    background-color: #323232;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home_page{
+    background-image: url("asserts/homeimage.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+#home_page::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top : 0;
+    height: 100%;
+    width: 100%;
+    background-color: #323232;
+    opacity: .2;
+    z-index: -1;
+}
+#home_page .home_page{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#home_page h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: main_text_2 .5s ease forwards;
+    animation-delay: 1s;
+}
+#home_page h1:nth-child(1){
+    animation-delay: 1s;
+}
+#home_page h1:nth-child(2){
+    animation-delay: 2s;
+}
+#home_page h1:nth-child(3){
+    animation: main_text_name .5s ease forwards;
+    animation-delay: 3s;
+}
+#home_page h1 span{
+    position: absolute;
+    top : 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #00FFF8;
+    animation: main_text_1 1s ease;
+    animation-delay: .5s;
+}
+#home_page h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#home_page h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#home_page h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+#home_page .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #00FFF8;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    transition-property: background-color,color;
+}
+#home_page .cta:hover{
+    color: white;
+    background-color: #00FFF8;
+}
+
+@keyframes main_text_1{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes main_text_2 {
+    100%{
+        color: white;
+    }
+}
+@keyframes main_text_name{
+    100%{
+        color: #00FFF8;
+    }
+}
