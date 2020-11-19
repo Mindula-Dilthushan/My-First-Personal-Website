@@ -19,7 +19,7 @@ a{
     justify-content: center;
 }
 #home_page{
-    background-image: url("asserts/hpimage.jpg");
+    background-image: url("../icon/hpimage.jpg");
     background-size: cover;
     background-position: top center;
     position: relative;
