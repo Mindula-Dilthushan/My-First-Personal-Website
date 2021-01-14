@@ -18,6 +18,19 @@ a{
     align-items: center;
     justify-content: center;
 }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
 #home_page{
     background-image: url("../icon/hpimage.jpg");
     background-size: cover;
@@ -79,7 +92,6 @@ a{
 #home_page h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
-
 #home_page .cta{
     display: inline-block;
     padding: 10px 30px;
@@ -97,7 +109,6 @@ a{
     color: white;
     background-color: #00FFF8;
 }
-
 @keyframes main_text_1{
     50%{
         width: 100%;
@@ -118,3 +129,108 @@ a{
         color: #00FFF8;
     }
 }
+
+/*Start Project Section*/
+#project{
+}
+#project .project{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin:0 auto;
+    padding: 100px 0;
+}
+#project .project-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#project .project-title span{
+    color: #00FFF8;
+}
+#project .project-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#project .project-list{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(../icon/project-background.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#project .project-list::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #c4c4c4 0%, #646262 100%);
+    opacity: .6;
+    z-index: -1;
+}
+.project .project-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#project .project-list h2{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#project .project-list p{
+    color: white;
+    text-align: left;
+}
+
+/*End Project Section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
